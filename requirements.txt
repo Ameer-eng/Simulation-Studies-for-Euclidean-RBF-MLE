@@ -1,0 +1,5 @@
+# Package versions used to compute the results in results/ (with Python 3.13).
+numpy==2.4.6
+scipy==1.18.1
+matplotlib==3.11.2
+joblib==1.6.0

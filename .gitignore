@@ -1,0 +1,18 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Per-sample-size checkpoints written during a run (they let an interrupted
+# run resume; the final estimates are in results/sim_p*.npz)
+results/checkpoints/
+
+# Output of `python rbf_mle_sim.py --quick` and of RUN = "quick" in the notebook
+results_quick/
+figures_quick/
+
+# Local run logs and archived results
+logs/
+archive/
