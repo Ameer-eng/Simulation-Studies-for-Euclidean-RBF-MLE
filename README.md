@@ -13,7 +13,7 @@ The paper shows that, under fixed-domain asymptotics, the maximum likelihood est
 | `rbf_mle_sim.py` | All computation: data generation, the global MLE, the exact Fisher information, the Monte Carlo driver, the figures and Table 1. |
 | `rbf_mle_simulation.ipynb` | Checks the fast code against dense linear algebra, draws the figures, and computes every number quoted in Section 4 and Appendix D. |
 | `results/sim_p{1,2,3}.npz` | The Monte Carlo estimates (9 sample sizes × 1000 replicates × 3 parameters) and Fisher-information curves behind the paper. |
-| `figures/` | Figures 1–3 (`rbf_mle_log_p{1,2,3}.pdf`) and A1–A3 (`rbf_mle_p{1,2,3}.pdf`) of the paper, with PNG copies. |
+| `figures/` | Figures 1–3 (`rbf_mle_log_p{1,2,3}.pdf`) and D1–D3 (`rbf_mle_p{1,2,3}.pdf`) of the paper, with PNG copies. |
 
 ## Setup
 
