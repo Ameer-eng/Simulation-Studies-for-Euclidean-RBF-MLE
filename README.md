@@ -13,7 +13,7 @@ The paper shows that, under fixed-domain asymptotics, the maximum likelihood est
 | `rbf_mle_sim.py` | All computation: data generation, the global MLE, the exact Fisher information, the Monte Carlo driver, the figures and Table 1. |
 | `rbf_mle_simulation.ipynb` | Checks the fast code against dense linear algebra, draws the figures, and computes every number quoted in Section 4 and Appendix D. |
 | `results/sim_p{1,2,3}.npz` | The Monte Carlo estimates (9 sample sizes × 1000 replicates × 3 parameters) and Fisher-information curves behind the paper. |
-| `figures/` | Figures 1–3 (`rbf_mle_log_p{1,2,3}.pdf`) and A1–A3 (`rbf_mle_p{1,2,3}.pdf`) of the paper. |
+| `figures/` | Figures 1–3 (`rbf_mle_log_p{1,2,3}.pdf`) and A1–A3 (`rbf_mle_p{1,2,3}.pdf`) of the paper, with PNG copies. |
 
 ## Setup
 
@@ -38,7 +38,7 @@ Rerun the whole study, overwriting `results/` and `figures/`:
 python rbf_mle_sim.py
 ```
 
-This takes several hours on a laptop, almost all of it for $p=1$ with $n\ge3\times10^5$. Each finished sample size is saved in `results/checkpoints/`, so an interrupted run picks up where it stopped when started again. `--p` selects dimensions (for example `--p 2 3`) and `--jobs` sets the number of parallel workers.
+This takes about 8–9 hours on a 4-core laptop, almost all of it for $p=1$ with $n\ge3\times10^5$ ($p=2$ and $p=3$ take about 15 and 20 minutes). Each finished sample size is saved in `results/checkpoints/`, so an interrupted run picks up where it stopped when started again. `--p` selects dimensions (for example `--p 2 3`) and `--jobs` sets the number of parallel workers.
 
 A quick end-to-end check with five sample sizes per dimension and 200 replicates takes about 3 minutes and writes to `results_quick/` and `figures_quick/`:
 
