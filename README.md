@@ -4,7 +4,7 @@ Code for the simulation study (Section 4 and Appendix D) of
 
 > Ameer Qaqish and Didong Li. *Sharp Asymptotic Theory of Maximum Likelihood Estimation for Gaussian Processes with an RBF Kernel.* arXiv:2610.10080, 2026. <https://arxiv.org/abs/2610.10080>
 
-The paper shows that, under fixed-domain asymptotics, the maximum likelihood estimators of the spatial variance $\sigma^2$, lengthscale $\ell$ and nugget variance $\tau^2$ of a Gaussian process with the RBF kernel $\sigma^2\exp\lbrace-\lVert x-x'\rVert^2/(2\ell^2)\rbrace$ converge at the minimax-optimal rates $b_n^{-p/2}$, $b_n^{-(p+2)/2}$ and $n^{-1/2}$, where $b_n=\log n/\log\log n$, and are jointly asymptotically normal. The simulations check this on $[0,1]^p$ for $p=1,2,3$, with $\theta_0=(\sigma_0^2,\ell_0,\tau_0^2)=(1,0.25,0.01)$, regular grids of $n\approx10^2$ to $10^6$ points, and 1000 replicates per $(p,n)$.
+The paper shows that, under fixed-domain asymptotics, the maximum likelihood estimators of the spatial variance $\sigma^2$, lengthscale $\ell$, and nugget variance $\tau^2$ of a Gaussian process defined on a bounded set $\mathcal{X} \subseteq \mathbb{R}^p$ with the RBF kernel $\sigma^2\exp\lbrace-\lVert x-x'\rVert^2/(2\ell^2)\rbrace$ converge at the minimax-optimal rates $b_n^{-p/2}$, $b_n^{-(p+2)/2}$ and $n^{-1/2}$, where $b_n=\log n/\log\log n$, and are jointly asymptotically normal. The simulations check this on $\mathcal{X} = [0,1]^p$ for $p=1,2,3$, with $\theta_0=(\sigma_0^2,\ell_0,\tau_0^2)=(1,0.25,0.01)$, regular grids of $n\approx10^2$ to $10^6$ points, and 1000 replicates per $(p,n)$.
 
 ## Contents
 
